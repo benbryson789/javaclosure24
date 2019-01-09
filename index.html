@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Closure 4</title>
+</head>
+<body>
+<script>
+	function sumX(x) {
+	return function(y){
+		return x + y;
+		
+	}
+} 
+
+var add10 = sumX(10);
+console.log(add10(3));
+</script>
+</body>
+</html>
